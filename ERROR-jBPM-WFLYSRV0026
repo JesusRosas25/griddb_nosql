@@ -1,0 +1,322 @@
+PS C:\Users\USUARIO> C:\Users\USUARIO\Downloads\JBPM\bin\standalone.bat
+Calling "C:\Users\USUARIO\Downloads\JBPM\bin\standalone.conf.bat"
+Setting JAVA property to "C:\Program Files\Java\jdk-14\bin\java"
+===============================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: "C:\Users\USUARIO\Downloads\JBPM"
+
+  JAVA: "C:\Program Files\Java\jdk-14\bin\java"
+
+  JAVA_OPTS: "-Dprogram.name=standalone.bat -Xms64M -Xmx1512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=512m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman  --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se"
+
+===============================================================================
+
+21:07:48,797 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+21:07:49,431 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+21:07:49,443 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+21:07:49,613 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+21:07:50,804 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.6.0.Final
+21:07:52,300 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+21:07:52,447 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment business-central.war
+21:07:52,458 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 9) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+21:07:52,467 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment jbpm-casemgmt.war
+21:07:52,471 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment kie-server.war
+21:07:56,119 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+21:07:56,156 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.6.5.Final
+21:07:56,194 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.6.5.Final
+21:07:56,312 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+21:07:56,324 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.8.Final
+21:07:56,414 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+21:07:56,475 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/jBPMDS]
+21:07:56,669 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+21:07:56,656 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+21:07:56,654 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+21:07:56,645 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+21:07:56,646 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+21:07:56,620 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+21:07:56,617 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+21:07:56,607 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 63) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+21:07:56,603 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 64) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+21:07:56,583 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+21:07:56,555 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 51) WFLYIIOP0001: Activating IIOP Subsystem
+21:07:56,541 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+21:07:56,532 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+21:07:57,205 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'C:\Users\USUARIO\Downloads\JBPM/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+21:07:57,077 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.6.1.Final
+21:07:57,003 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.0.13.Final starting
+21:07:56,887 WARN  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 62) AMQ222269: Please use a fixed value for "journal-pool-files". Default changed per https://issues.apache.org/jira/browse/ARTEMIS-1628
+21:07:56,823 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+21:07:56,732 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+21:07:57,471 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 62) AMQ221075: Usage of wildcardRoutingEnabled configuration property is deprecated, please use wildCardConfiguration.enabled instead
+21:07:57,373 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+21:07:57,331 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+21:07:57,581 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+21:07:57,577 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+21:07:57,761 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+21:07:57,773 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+21:07:57,881 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+21:07:57,984 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+21:07:58,089 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+21:07:58,097 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/jBPMDS]
+21:07:58,436 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-6) WFLYIIOP0009: CORBA ORB Service started
+21:07:58,610 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+21:07:58,632 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+21:07:58,638 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore C:\Users\USUARIO\Downloads\JBPM\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+21:07:58,678 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "jbpm-casemgmt.war" (runtime-name: "jbpm-casemgmt.war")
+21:07:58,678 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "kie-server.war" (runtime-name: "kie-server.war")
+21:07:58,677 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "business-central.war" (runtime-name: "business-central.war")
+21:07:58,657 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\USUARIO\Downloads\JBPM\standalone\deployments
+21:07:58,964 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=C:\Users\USUARIO\Downloads\JBPM\standalone\data\activemq\journal,bindingsDirectory=C:\Users\USUARIO\Downloads\JBPM\standalone\data\activemq\bindings,largeMessagesDirectory=C:\Users\USUARIO\Downloads\JBPM\standalone\data\activemq\largemessages,pagingDirectory=C:\Users\USUARIO\Downloads\JBPM\standalone\data\activemq\paging)
+21:07:59,052 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+21:07:59,116 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221013: Using NIO Journal
+21:07:59,302 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 792.723.456
+21:07:59,388 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+21:07:59,402 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+21:07:59,396 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1)
+21:07:59,438 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+21:07:59,479 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+21:07:59,753 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221034: Waiting indefinitely to obtain live lock
+21:07:59,758 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221035: Live Server Obtained live lock
+21:08:01,037 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+21:08:01,037 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+21:08:01,041 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+21:08:01,038 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+21:08:01,815 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221007: Server is now live
+21:08:01,823 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 78) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.3.jbossorg-001 [default, nodeID=133b03e4-840c-11ea-bc3d-a402b9f311a0]
+21:08:01,885 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 79) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+21:08:01,897 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+21:08:01,990 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) WFLYJCA0007: Registered connection factory java:/JmsXA
+21:08:02,001 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+21:08:02,132 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-6) AMQ151007: Resource adaptor started
+21:08:02,133 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-6) IJ020002: Deployed: file://RaActivatoractivemq-ra
+21:08:02,135 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+21:08:02,135 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+21:08:02,174 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 80) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+21:08:19,573 ERROR [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0002: Could not read provided index: /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/kubernetes-client-4.6.0.jar/META-INF/jandex.idx
+21:08:19,636 ERROR [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0002: Could not read provided index: /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/kubernetes-model-4.6.0.jar/META-INF/jandex.idx
+21:08:20,749 ERROR [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0002: Could not read provided index: /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/kubernetes-model-common-4.6.0.jar/META-INF/jandex.idx
+21:08:21,027 ERROR [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0002: Could not read provided index: /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/openshift-client-4.6.0.jar/META-INF/jandex.idx
+21:08:23,366 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jaxb-api.jar in /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+21:08:23,370 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jaxb-core.jar in /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/jaxb-impl-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+21:08:23,374 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jaxb-core.jar in /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/jaxb-xjc-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+21:08:23,375 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jaxb-impl.jar in /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/jaxb-xjc-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+21:08:23,465 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry xml-apis.jar in /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/serializer-2.7.1.jar  does not point to a valid jar for a Class-Path reference.
+21:08:23,472 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry xercesImpl.jar in /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/xalan-2.7.1.jar  does not point to a valid jar for a Class-Path reference.
+21:08:23,473 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry xml-apis.jar in /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/xalan-2.7.1.jar  does not point to a valid jar for a Class-Path reference.
+21:08:23,474 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry serializer.jar in /C:/Users/USUARIO/content/kie-server.war/WEB-INF/lib/xalan-2.7.1.jar  does not point to a valid jar for a Class-Path reference.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jboss.as.server.deployment.reflect.ClassReflectionIndex (jar:file:/C:/Users/USUARIO/Downloads/JBPM/modules/system/layers/base/org/jboss/as/server/main/wildfly-server-6.0.2.Final.jar!/) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.jboss.as.server.deployment.reflect.ClassReflectionIndex
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+21:08:25,086 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment kie-server.war
+21:08:25,363 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 6.0.13.Final
+21:08:25,626 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'EJBTimerScheduler' in deployment unit 'deployment "kie-server.war"' are as follows:
+
+        java:global/kie-server/EJBTimerScheduler!org.jbpm.services.ejb.timer.EJBTimerScheduler
+        java:app/kie-server/EJBTimerScheduler!org.jbpm.services.ejb.timer.EJBTimerScheduler
+        java:module/EJBTimerScheduler!org.jbpm.services.ejb.timer.EJBTimerScheduler
+        ejb:kie-server/EJBTimerScheduler!org.jbpm.services.ejb.timer.EJBTimerScheduler
+        java:global/kie-server/EJBTimerScheduler
+        java:app/kie-server/EJBTimerScheduler
+        java:module/EJBTimerScheduler
+
+21:08:25,626 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'RetryTrackerSingleton' in deployment unit 'deployment "kie-server.war"' are as follows:
+
+        java:global/kie-server/RetryTrackerSingleton!org.kie.server.jms.RetryTrackerSingleton
+        java:app/kie-server/RetryTrackerSingleton!org.kie.server.jms.RetryTrackerSingleton
+        java:module/RetryTrackerSingleton!org.kie.server.jms.RetryTrackerSingleton
+        ejb:kie-server/RetryTrackerSingleton!org.kie.server.jms.RetryTrackerSingleton
+        java:global/kie-server/RetryTrackerSingleton
+        java:app/kie-server/RetryTrackerSingleton
+        java:module/RetryTrackerSingleton
+
+21:08:25,630 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'ContainerManagerEJB' in deployment unit 'deployment "kie-server.war"' are as follows:
+
+        java:global/kie-server/ContainerManagerEJB!org.kie.server.jms.ContainerManagerEJB
+        java:app/kie-server/ContainerManagerEJB!org.kie.server.jms.ContainerManagerEJB
+        java:module/ContainerManagerEJB!org.kie.server.jms.ContainerManagerEJB
+        ejb:kie-server/ContainerManagerEJB!org.kie.server.jms.ContainerManagerEJB
+        java:global/kie-server/ContainerManagerEJB
+        java:app/kie-server/ContainerManagerEJB
+        java:module/ContainerManagerEJB
+
+21:08:25,689 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.deployment.unit."kie-server.war".POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit."kie-server.war".POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment "kie-server.war"
+        at org.jboss.as.server@6.0.2.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:151)
+        at org.jboss.msc@1.4.3.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1736)
+        at org.jboss.msc@1.4.3.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1698)
+        at org.jboss.msc@1.4.3.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1556)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+        at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.Error: java.lang.NoSuchFieldException: override
+        at org.jboss.classfilewriter@1.2.3.Final//org.jboss.classfilewriter.ClassFile$1.run(ClassFile.java:394)
+        at org.jboss.classfilewriter@1.2.3.Final//org.jboss.classfilewriter.ClassFile$1.run(ClassFile.java:385)
+        at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+        at org.jboss.classfilewriter@1.2.3.Final//org.jboss.classfilewriter.ClassFile.<clinit>(ClassFile.java:385)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.iiop.handle.SerializationHackProxy.proxy(SerializationHackProxy.java:55)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.iiop.handle.HandleDelegateImpl.<init>(HandleDelegateImpl.java:58)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.deployment.processors.IIOPJndiBindingProcessor.bindService(IIOPJndiBindingProcessor.java:108)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.deployment.processors.IIOPJndiBindingProcessor.deploy(IIOPJndiBindingProcessor.java:77)
+        at org.jboss.as.server@6.0.2.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:144)
+        ... 8 more
+Caused by: java.lang.NoSuchFieldException: override
+        at java.base/java.lang.Class.getDeclaredField(Class.java:2489)
+        at org.jboss.classfilewriter@1.2.3.Final//org.jboss.classfilewriter.ClassFile$1.run(ClassFile.java:392)
+        ... 16 more
+
+21:08:27,114 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment jbpm-casemgmt.war
+21:08:27,281 INFO  [org.apache.deltaspike.core.util.ProjectStageProducer] (MSC service thread 1-6) Computed the following DeltaSpike ProjectStage: Production
+21:08:27,291 INFO  [org.jboss.errai.enterprise.rebind.NonGwtEventQualifierSerializerGenerator] (MSC service thread 1-6) Attempting to load org.jboss.errai.cdi.EventQualifierSerializerImpl
+21:08:27,294 INFO  [org.jboss.errai.codegen.util.ClassChangeUtil] (MSC service thread 1-6) Searching for class: org.jboss.errai.cdi.EventQualifierSerializerImpl
+21:08:27,299 INFO  [org.jboss.errai.codegen.util.ClassChangeUtil] (MSC service thread 1-6) Could not find URL for org.jboss.errai.cdi.EventQualifierSerializerImpl. Attempting to load with context class loader.
+21:08:27,306 INFO  [org.jboss.errai.codegen.util.ClassChangeUtil] (MSC service thread 1-6) Successfully loaded org.jboss.errai.cdi.EventQualifierSerializerImpl with context class loader.
+21:08:27,306 INFO  [org.jboss.errai.enterprise.rebind.NonGwtEventQualifierSerializerGenerator] (MSC service thread 1-6) Successfully loaded org.jboss.errai.cdi.EventQualifierSerializerImpl
+21:08:27,347 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'AlternativeStarterBean' in deployment unit 'deployment "jbpm-casemgmt.war"' are as follows:
+
+        java:global/jbpm-casemgmt/AlternativeStarterBean!org.uberfire.backend.server.cdi.AlternativeStarterBean
+        java:app/jbpm-casemgmt/AlternativeStarterBean!org.uberfire.backend.server.cdi.AlternativeStarterBean
+        java:module/AlternativeStarterBean!org.uberfire.backend.server.cdi.AlternativeStarterBean
+        ejb:jbpm-casemgmt/AlternativeStarterBean!org.uberfire.backend.server.cdi.AlternativeStarterBean
+        java:global/jbpm-casemgmt/AlternativeStarterBean
+        java:app/jbpm-casemgmt/AlternativeStarterBean
+        java:module/AlternativeStarterBean
+
+21:08:27,348 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'IOWatchServiceExecutorImpl' in deployment unit 'deployment "jbpm-casemgmt.war"' are as follows:
+
+        java:global/jbpm-casemgmt/IOWatchServiceExecutorImpl!org.uberfire.backend.server.io.watch.IOWatchServiceExecutor
+        java:app/jbpm-casemgmt/IOWatchServiceExecutorImpl!org.uberfire.backend.server.io.watch.IOWatchServiceExecutor
+        java:module/IOWatchServiceExecutorImpl!org.uberfire.backend.server.io.watch.IOWatchServiceExecutor
+        ejb:jbpm-casemgmt/IOWatchServiceExecutorImpl!org.uberfire.backend.server.io.watch.IOWatchServiceExecutor
+        java:global/jbpm-casemgmt/IOWatchServiceExecutorImpl
+        java:app/jbpm-casemgmt/IOWatchServiceExecutorImpl
+        java:module/IOWatchServiceExecutorImpl
+
+21:08:27,379 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."jbpm-casemgmt.war".POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit."jbpm-casemgmt.war".POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment "jbpm-casemgmt.war"
+        at org.jboss.as.server@6.0.2.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:151)
+        at org.jboss.msc@1.4.3.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1736)
+        at org.jboss.msc@1.4.3.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1698)
+        at org.jboss.msc@1.4.3.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1556)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+        at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.jboss.classfilewriter.ClassFile
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.iiop.handle.SerializationHackProxy.proxy(SerializationHackProxy.java:55)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.iiop.handle.HandleDelegateImpl.<init>(HandleDelegateImpl.java:58)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.deployment.processors.IIOPJndiBindingProcessor.bindService(IIOPJndiBindingProcessor.java:108)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.deployment.processors.IIOPJndiBindingProcessor.deploy(IIOPJndiBindingProcessor.java:77)
+        at org.jboss.as.server@6.0.2.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:144)
+        ... 8 more
+
+21:08:27,774 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+21:09:11,851 ERROR [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0002: Could not read provided index: /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/kubernetes-client-4.6.0.jar/META-INF/jandex.idx
+21:09:11,949 ERROR [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0002: Could not read provided index: /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/kubernetes-model-4.6.0.jar/META-INF/jandex.idx
+21:09:12,723 ERROR [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0002: Could not read provided index: /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/kubernetes-model-common-4.6.0.jar/META-INF/jandex.idx
+21:09:13,666 ERROR [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0002: Could not read provided index: /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/openshift-client-4.6.0.jar/META-INF/jandex.idx
+21:09:17,078 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jaxb-api.jar in /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+21:09:17,082 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jaxb-core.jar in /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/jaxb-impl-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+21:09:17,288 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry xml-apis.jar in /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/serializer-2.7.1.jar  does not point to a valid jar for a Class-Path reference.
+21:09:17,329 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry xercesImpl.jar in /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/xalan-2.7.1.jar  does not point to a valid jar for a Class-Path reference.
+21:09:17,329 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry xml-apis.jar in /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/xalan-2.7.1.jar  does not point to a valid jar for a Class-Path reference.
+21:09:17,332 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry serializer.jar in /C:/Users/USUARIO/content/business-central.war/WEB-INF/lib/xalan-2.7.1.jar  does not point to a valid jar for a Class-Path reference.
+21:09:19,547 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-4) WFLYSRV0018: Deployment "deployment.business-central.war" is using a private module ("org.jboss.as.domain-management") which may be changed or removed in future versions without notice.
+21:09:19,672 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment business-central.war
+21:09:19,869 INFO  [org.apache.deltaspike.core.util.ProjectStageProducer] (MSC service thread 1-8) Computed the following DeltaSpike ProjectStage: Production
+21:09:19,883 INFO  [org.jboss.errai.enterprise.rebind.NonGwtEventQualifierSerializerGenerator] (MSC service thread 1-8) Attempting to load org.jboss.errai.cdi.EventQualifierSerializerImpl
+21:09:19,886 INFO  [org.jboss.errai.codegen.util.ClassChangeUtil] (MSC service thread 1-8) Searching for class: org.jboss.errai.cdi.EventQualifierSerializerImpl
+21:09:19,890 INFO  [org.jboss.errai.codegen.util.ClassChangeUtil] (MSC service thread 1-8) Could not find URL for org.jboss.errai.cdi.EventQualifierSerializerImpl. Attempting to load with context class loader.
+21:09:19,893 INFO  [org.jboss.errai.codegen.util.ClassChangeUtil] (MSC service thread 1-8) Successfully loaded org.jboss.errai.cdi.EventQualifierSerializerImpl with context class loader.
+21:09:19,894 INFO  [org.jboss.errai.enterprise.rebind.NonGwtEventQualifierSerializerGenerator] (MSC service thread 1-8) Successfully loaded org.jboss.errai.cdi.EventQualifierSerializerImpl
+21:09:19,928 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'IOWatchServiceExecutorImpl' in deployment unit 'deployment "business-central.war"' are as follows:
+
+        java:global/business-central/IOWatchServiceExecutorImpl!org.uberfire.backend.server.io.watch.IOWatchServiceExecutor
+        java:app/business-central/IOWatchServiceExecutorImpl!org.uberfire.backend.server.io.watch.IOWatchServiceExecutor
+        java:module/IOWatchServiceExecutorImpl!org.uberfire.backend.server.io.watch.IOWatchServiceExecutor
+        ejb:business-central/IOWatchServiceExecutorImpl!org.uberfire.backend.server.io.watch.IOWatchServiceExecutor
+        java:global/business-central/IOWatchServiceExecutorImpl
+        java:app/business-central/IOWatchServiceExecutorImpl
+        java:module/IOWatchServiceExecutorImpl
+
+21:09:19,928 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'FileSystemDeleteWorker' in deployment unit 'deployment "business-central.war"' are as follows:
+
+        java:global/business-central/FileSystemDeleteWorker!org.guvnor.structure.backend.FileSystemDeleteWorker
+        java:app/business-central/FileSystemDeleteWorker!org.guvnor.structure.backend.FileSystemDeleteWorker
+        java:module/FileSystemDeleteWorker!org.guvnor.structure.backend.FileSystemDeleteWorker
+        ejb:business-central/FileSystemDeleteWorker!org.guvnor.structure.backend.FileSystemDeleteWorker
+        java:global/business-central/FileSystemDeleteWorker
+        java:app/business-central/FileSystemDeleteWorker
+        java:module/FileSystemDeleteWorker
+
+21:09:19,934 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'ConfigServiceWatchServiceExecutorImpl' in deployment unit 'deployment "business-central.war"' are as follows:
+
+        java:global/business-central/ConfigServiceWatchServiceExecutorImpl!org.guvnor.structure.backend.config.watch.ConfigServiceWatchServiceExecutor
+        java:app/business-central/ConfigServiceWatchServiceExecutorImpl!org.guvnor.structure.backend.config.watch.ConfigServiceWatchServiceExecutor
+        java:module/ConfigServiceWatchServiceExecutorImpl!org.guvnor.structure.backend.config.watch.ConfigServiceWatchServiceExecutor
+        ejb:business-central/ConfigServiceWatchServiceExecutorImpl!org.guvnor.structure.backend.config.watch.ConfigServiceWatchServiceExecutor
+        java:global/business-central/ConfigServiceWatchServiceExecutorImpl
+        java:app/business-central/ConfigServiceWatchServiceExecutorImpl
+        java:module/ConfigServiceWatchServiceExecutorImpl
+
+21:09:19,935 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'AlternativeStarterBean' in deployment unit 'deployment "business-central.war"' are as follows:
+
+        java:global/business-central/AlternativeStarterBean!org.uberfire.backend.server.cdi.AlternativeStarterBean
+        java:app/business-central/AlternativeStarterBean!org.uberfire.backend.server.cdi.AlternativeStarterBean
+        java:module/AlternativeStarterBean!org.uberfire.backend.server.cdi.AlternativeStarterBean
+        ejb:business-central/AlternativeStarterBean!org.uberfire.backend.server.cdi.AlternativeStarterBean
+        java:global/business-central/AlternativeStarterBean
+        java:app/business-central/AlternativeStarterBean
+        java:module/AlternativeStarterBean
+
+21:09:19,936 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'IncrementalBuilderExecutorManager' in deployment unit 'deployment "business-central.war"' are as follows:
+
+        java:global/business-central/IncrementalBuilderExecutorManager!org.guvnor.common.services.builder.IncrementalBuilderExecutorManager
+        java:app/business-central/IncrementalBuilderExecutorManager!org.guvnor.common.services.builder.IncrementalBuilderExecutorManager
+        java:module/IncrementalBuilderExecutorManager!org.guvnor.common.services.builder.IncrementalBuilderExecutorManager
+        ejb:business-central/IncrementalBuilderExecutorManager!org.guvnor.common.services.builder.IncrementalBuilderExecutorManager
+        java:global/business-central/IncrementalBuilderExecutorManager
+        java:app/business-central/IncrementalBuilderExecutorManager
+        java:module/IncrementalBuilderExecutorManager
+
+21:09:19,974 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.deployment.unit."business-central.war".POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit."business-central.war".POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment "business-central.war"
+        at org.jboss.as.server@6.0.2.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:151)
+        at org.jboss.msc@1.4.3.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1736)
+        at org.jboss.msc@1.4.3.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1698)
+        at org.jboss.msc@1.4.3.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1556)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+        at org.jboss.threads@2.3.2.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+        at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.jboss.classfilewriter.ClassFile
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.iiop.handle.SerializationHackProxy.proxy(SerializationHackProxy.java:55)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.iiop.handle.HandleDelegateImpl.<init>(HandleDelegateImpl.java:58)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.deployment.processors.IIOPJndiBindingProcessor.bindService(IIOPJndiBindingProcessor.java:108)
+        at org.jboss.as.ejb3@14.0.1.Final//org.jboss.as.ejb3.deployment.processors.IIOPJndiBindingProcessor.deploy(IIOPJndiBindingProcessor.java:77)
+        at org.jboss.as.server@6.0.2.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:144)
+        ... 8 more
+
+21:09:19,995 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "business-central.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"business-central.war\".POST_MODULE" => "WFLYSRV0153: Failed to process phase POST_MODULE of deployment \"business-central.war\"
+    Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.jboss.classfilewriter.ClassFile"}}
+21:09:19,999 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "jbpm-casemgmt.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"jbpm-casemgmt.war\".POST_MODULE" => "WFLYSRV0153: Failed to process phase POST_MODULE of deployment \"jbpm-casemgmt.war\"
+    Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.jboss.classfilewriter.ClassFile"}}
+21:09:20,003 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "kie-server.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"kie-server.war\".POST_MODULE" => "WFLYSRV0153: Failed to process phase POST_MODULE of deployment \"kie-server.war\"
+    Caused by: java.lang.Error: java.lang.NoSuchFieldException: override
+    Caused by: java.lang.NoSuchFieldException: override"}}
+21:09:20,054 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "kie-server.war" (runtime-name : "kie-server.war")
+21:09:20,061 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "jbpm-casemgmt.war" (runtime-name : "jbpm-casemgmt.war")
+21:09:20,062 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "business-central.war" (runtime-name : "business-central.war")
+21:09:20,065 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."jbpm-casemgmt.war".POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment "jbpm-casemgmt.war"
+      service jboss.deployment.unit."kie-server.war".POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment "kie-server.war"
+      service jboss.deployment.unit."business-central.war".POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment "business-central.war"
+
+21:09:20,165 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+21:09:20,169 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+21:09:20,172 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+21:09:20,173 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started (with errors) in 91840ms - Started 392 of 617 services (3 services failed or missing dependencies, 344 services are lazy, passive or on-demand)
